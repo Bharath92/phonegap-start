@@ -7,5 +7,7 @@ build:
   ci:
     - node --version
     - npm install -g phonegap@6.2.0
+    - export ANDROID_HOME=/opt/android-sdk
+    - export ANDROID_SDK=/opt/android-sdk/tools/bin
     - phonegap run android
     
