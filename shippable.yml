@@ -6,3 +6,4 @@ node_js:
 ci:
   - npm install -g phonegap@latest
   - phonegap run android
+  - cat /root/.nvm/nvm.sh
