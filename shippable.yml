@@ -6,7 +6,6 @@ node_js:
 build:
   ci:
     - echo $JAVA_HOME
-    - nvm use 
     - npm install -g phonegap@latest
     - phonegap run android
     
