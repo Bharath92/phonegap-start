@@ -1,4 +1,4 @@
-language: nodejs
+language: node_js
 
 ci:
   - npm install -g phonegap@latest
