@@ -1,0 +1,5 @@
+language: nodejs
+
+ci:
+  - npm install -g phonegap@latest
+  - phonegap run android
