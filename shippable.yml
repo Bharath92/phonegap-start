@@ -3,7 +3,9 @@ language: node_js
 node_js:
   - 8.2.1
 
-ci:
-  - npm install -g phonegap@latest
-  - phonegap run android
-  - cat /root/.nvm/nvm.sh
+build:
+  ci:
+    - cat /root/.nvm/nvm.sh
+    - npm install -g phonegap@latest
+    - phonegap run android
+    
