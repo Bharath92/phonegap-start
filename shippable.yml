@@ -1,10 +1,12 @@
 language: node_js
 
 node_js:
-  - 8.2.1
+  - 8.6.0
 
 build:
   ci:
+    - echo $JAVA_HOME
+    - nvm use 
     - npm install -g phonegap@latest
     - phonegap run android
     
