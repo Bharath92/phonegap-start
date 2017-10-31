@@ -2,7 +2,7 @@ language: node_js
 
 build:
   ci:
-    - nvm use "8.6.0"
+    - nvm use "8.6.5"
     - npm install -g phonegap@6.2.0
     - ls /opt/android-sdk/tools/bin
     - export ANDROID_HOME=/opt/android-sdk
