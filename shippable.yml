@@ -1,11 +1,13 @@
 language: node_js
 
+env:
+  global:
+  - ANDROID_HOME: /opt/android-sdk
+  - ANDROID_SDK: /opt/android-sdk/tools/bin
+
 build:
   ci:
     - nvm use "8.6.5"
     - npm install -g phonegap@6.2.0
-    - ls /opt/android-sdk/tools/bin
-    - export ANDROID_HOME=/opt/android-sdk
-    - export ANDROID_SDK=/opt/android-sdk/tools/bin
     - phonegap run android
     
