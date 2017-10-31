@@ -7,6 +7,7 @@ env:
 
 build:
   ci:
+    - source ~/.nvm/nvm.sh
     - nvm use "8.6.5"
     - npm install -g phonegap@6.2.0
     - phonegap run android
